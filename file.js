@@ -151,7 +151,8 @@ form.onsubmit = function () {
         }
     }
     else{
-        exist=false;     
+        exist=false;
+        Bus4.innerHTML='';
                     
     }
 
