@@ -88,6 +88,7 @@ let select_depart = document.querySelector('#depart');
 let select_arrive = document.querySelector('#arrive');
 let plaque = document.querySelector('#plaque');
 let select_place = document.querySelector('#placeSpecifie');
+let submitBtn=document.querySelector('#submit');
 console.log(form);
 var depart;
 var arrivee;
@@ -101,6 +102,13 @@ select_depart.onchange = function () {
         let option = document.createElement('option');
         option.textContent = plaques[select_depart.options['selectedIndex']][i];
         select_place.appendChild(option);
+    }
+}
+time.onchange=()=>{
+    if(time.value.length===0){
+        submitBtn.disabled=true;
+    }else{
+        submitBtn.disabled=false
     }
 }
 form.onsubmit = function () {
