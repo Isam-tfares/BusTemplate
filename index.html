@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Timer Safi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/14273d579a.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-light pt-3">
+    <div class="bg-dark mb-5" style="width:95%;margin: 10px auto;">
+        <div  style="background-color: white;">
+        <nav class="navbar bg-body-tertiary" style="">
+            <div class="container fw-bold">
+            <a class="navbar-brand" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bus-front-fill text-dark" viewBox="0 0 16 16">
+                    <path d="M16 7a1 1 0 0 1-1 1v3.5c0 .818-.393 1.544-1 2v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5V14H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2a2.496 2.496 0 0 1-1-2V8a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1V2.64C1 1.452 1.845.408 3.064.268A43.608 43.608 0 0 1 8 0c2.1 0 3.792.136 4.936.268C14.155.408 15 1.452 15 2.64V4a1 1 0 0 1 1 1v2ZM3.552 3.22A43.306 43.306 0 0 1 8 3c1.837 0 3.353.107 4.448.22a.5.5 0 0 0 .104-.994A44.304 44.304 0 0 0 8 2c-1.876 0-3.426.109-4.552.226a.5.5 0 1 0 .104.994ZM8 4c-1.876 0-3.426.109-4.552.226A.5.5 0 0 0 3 4.723v3.554a.5.5 0 0 0 .448.497C4.574 8.891 6.124 9 8 9c1.876 0 3.426-.109 4.552-.226A.5.5 0 0 0 13 8.277V4.723a.5.5 0 0 0-.448-.497A44.304 44.304 0 0 0 8 4Zm-3 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm8 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm-7 0a1 1 0 0 0 1 1h2a1 1 0 1 0 0-2H7a1 1 0 0 0-1 1Z"/>
+                </svg>
+                <span class="text-dark">Bus Safi</span>
+            </a>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                <a class="nav-link text-dark" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-dark" href="#">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">Contact us</a>
+                </li>
+                <li class="nav-item bg-dark " style="border-radius: 20px;">
+                <a class="nav-link text-light" href="#">Get Time</a>
+                </li>
+                
+            </ul>
+            </div>
+        </nav>
+        <section>
+            <div class="container mt-4">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h1 class="fw-bold">Bus Timer in Safi <br>Be in Time </h1>
+                        <p class="text-secondary fw-light mt-3 ">With this website, you will never be late for your appointments again. You can know the remaining time for the bus</p>
+
+                    </div>
+                    <div class="col-md-6">
+                        <img src="./assets/Bus.jpeg" class="img-fluid ">
+                    </div>
+                </div>
+                <li  class=" d-flex align-items-center justify-content-center" style="border-radius: 20px;width: 120px; height: 50px;margin: 10px auto;background-color: black;">
+                    <a class="nav-link text-light" href="#form">Get Time</a>
+                </li>
+                
+            </div>
+        </section>
+        <section id="form" class="mt-5">
+            <div class="container">
+                <form action="" method="dialog">
+                    <div class="row mb-3">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Time</label>
+                    <div class="col-sm-10">
+                        <input type="time" name="time" class="form-control" id="time">
+                    </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Your Place</label>
+                        <div class="col-sm-10">
+                            <select class="form-select" aria-label="Default select example" id="depart">
+                                <option>Sidi Bouzid</option>
+                                <option>Ouad lbacha</option>
+                                <option>Quartier Rabat</option>
+                                <option>Nouvelle Ville</option>
+                                <option>Orida</option>
+                                <option>Course</option>
+                                <option>Essalam</option>
+                                <option>Meftah lkheir</option>
+                                <option>Essaada</option>
+                                <option>Azib daraai</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Exacte place</label>
+                        <div class="col-sm-10">
+                            <select name="" id="placeSpecifie" class="form-select">
+                                <option>Borj nador</option>
+                                <option>Faculté/ENSA</option>
+                                <option>Hotel Panorama</option>
+                                <option>Mosqué Sidi Bouzid</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Destination Place</label>
+                        <div class="col-sm-10">
+                            <select class="form-select" aria-label="Default select example" id="arrive">
+                                <option>Sidi Bouzid</option>
+                                <option>Ouad lbacha</option>
+                                <option>Quartier Rabat</option>
+                                <option>Nouvelle Ville</option>
+                                <option>Anas</option>
+                                <option>Orida</option>
+                                <option>Course</option>
+                                <option>Essalam</option>
+                                <option>Meftah lkheir</option>
+                                <option>Essaada</option>
+                                <option>Azib daraai</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <button type="submit"  name="submit" class="btn btn-primary">Submit</button>
+                </form>
+                <div id="Time">
+                    <h3  class="text-center fw-normal fs-4" id="Bus4"> </h3>
+                    <h3 class="text-center fw-normal fs-4" id="Bus18"> </h3>
+                </div>
+            </div>
+
+        </section>
+        
+        
+        </div>
+    </div>
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+            <!-- Google -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+      
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2020 Copyright:
+          <a class="text-white" href="#">Tf Isam</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous"></script>
+                <script src="file.js"></script>
+</body>
+</html>
